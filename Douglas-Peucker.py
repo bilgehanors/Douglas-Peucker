@@ -71,9 +71,9 @@ def simplify_geojson(input_geojson_path, output_geojson_path, tolerance=0.001):
         json.dump(geojson_data, f)
 
 if __name__ == "__main__":
-    input_file_name = '/Users/bilgehanors/Desktop/PA_Douglas_Peucker/bodrum.geojson'
-    output_file_name = '/Users/bilgehanors/Desktop/output2.geojson'
-    tolerance = 0.005  # Düzeltme toleransını değiştirebilirsiniz
+    input_file_name = '/bodrum.geojson'
+    output_file_name = '/output.geojson' #You can specify the location of the file
+    tolerance = 0.005  # You can change the epsilon value
 
     simplify_geojson(input_file_name, output_file_name, tolerance)
 
