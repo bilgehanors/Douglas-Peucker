@@ -77,8 +77,4 @@ if __name__ == "__main__":
 
     simplify_geojson(input_file_name, output_file_name, tolerance)
 
-def plot_geojson(file_path):
-    gdf =gdp.read_file(file_path)
-    gdf.plot()
-    plt.show()
-plot_geojson(output_file_name)
+
